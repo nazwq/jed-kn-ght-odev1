@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: #32383e;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#kodluyoruz {
+    margin-top: 10vh;
+}
+
+blockquote {
+    color: #f78501;
+    font-size: x-large;
+    letter-spacing: 2px;
+}

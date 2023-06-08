@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Style/Style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container">
+            <img
+                id="kodluyoruz"
+                width="100px"
+                src="https://kodluyoruz.org/wp-content/uploads/2022/05/kodluyoruz_yatay_slogan-300x35.png"
+            />
+            <blockquote>
+                Merhaba, <span id="username">...</span>! Hoş geldin!
+            </blockquote>
+            <blockquote id="date"></blockquote>
+            <blockquote>
+                tarihinde
+                <strong>Kodluyoruz Frontend Web Development Patikası</strong
+                >'nın Javascript
+            </blockquote>
+            <blockquote>bölümü 1. Ödevindesiniz.</blockquote>
+        </div>
+        <script>
+            document.getElementById("username").innerText =
+                prompt("Adınızı giriniz...");
+
+            setInterval(function () {
+                document.getElementById("date").innerText = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()} ${['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'][new Date().getDay()]}`;
+            }, 1000);
+        </script>
+    </body>
+</html>
